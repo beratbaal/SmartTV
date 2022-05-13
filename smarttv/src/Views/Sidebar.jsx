@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/Sidebar.css";
+import { Link } from "react-router-dom";
 
 function openNav() {
     document.getElementById("Sidebar").style.width = "250px";
@@ -24,7 +25,7 @@ export class Sidebar extends React.Component {
                     <div className="sidebarlist">
                     <ul>
                         <li><a href="#"><img src="https://img.icons8.com/windows/2x/home.png" className="listimage"/>Home</a></li>
-                        <li><a href="#"><img src="https://img.icons8.com/ios/2x/tv.png" className="listimage"/>TV Channels</a></li>
+                     <Link to={"/Channels"}><li><a href="#"><img src="https://img.icons8.com/ios/2x/tv.png" className="listimage"/>TV Channels</a></li></Link>   
                         <li><a href="#"><img src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/2x/external-app-essentials-tanah-basah-basic-outline-tanah-basah-2.png" className="listimage"/>Streaming Services</a></li>
                         <li><a href="#"><img src="https://img.icons8.com/material-outlined/2x/documentary.png" className="listimage"/>Online Cinema</a></li>
                         <li><a href="#"><img src="https://img.icons8.com/material-outlined/2x/christmas-star.png" className="listimage"/>Library</a></li>

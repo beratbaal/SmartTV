@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/Channels.css";
+import { Sidebar } from "./Sidebar";
 
 export class Channels extends React.Component {
     constructor(props) {
@@ -8,7 +9,7 @@ export class Channels extends React.Component {
     render(){
         return(
             <>
-          
+          <Sidebar/>
             </>
         )
     }
