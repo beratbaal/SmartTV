@@ -3,7 +3,7 @@
     margin-top: -3%;
     width: 80%;
     height: auto;
-   
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .header{
     color: white;
@@ -21,6 +21,23 @@
     border-radius: 30px;
     
 }
+.horizontalcardheader{
+    max-width: 100px;
+    position: absolute;
+    top: 62%;
+    left: 21%;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+    
+}
+
 ::placeholder{
     color: #3c3a3ac9;
 }

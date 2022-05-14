@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import {Sidebar} from './Views/Sidebar';
-import { Channels } from './Views/Channels';
+import  Channels  from './Views/Channels';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+
 
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
   function MainPage(){
     return(
       <Sidebar/>
+      
     );
     
   }
@@ -20,7 +23,7 @@ function App() {
       <Routes>
         <Route index path="/" element={<MainPage/>}/>
         <Route index path="/Channels" element={<Channels/>}/>
-       
+     
       </Routes>
     </BrowserRouter>
   )
