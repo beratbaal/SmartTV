@@ -4,9 +4,9 @@ import {Sidebar} from './Views/Sidebar';
 import { Channels } from './Views/Channels';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-function App() {
- 
 
+function App() {
+  
 
   function MainPage(){
     return(
@@ -20,6 +20,7 @@ function App() {
       <Routes>
         <Route index path="/" element={<MainPage/>}/>
         <Route index path="/Channels" element={<Channels/>}/>
+       
       </Routes>
     </BrowserRouter>
   )

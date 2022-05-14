@@ -1,0 +1,26 @@
+.channelsheader{
+    margin-left: 20%;
+    margin-top: -3%;
+    width: 80%;
+    height: auto;
+   
+}
+.header{
+    color: white;
+}
+
+.channelsinput{
+    float: right;
+    position: absolute;
+    margin-top: -2%;
+    margin-left: 60%;
+    height: 3%;
+    width: 15%;
+    border:none;
+    background-color: #818181;
+    border-radius: 30px;
+    
+}
+::placeholder{
+    color: #3c3a3ac9;
+}
