@@ -4,7 +4,7 @@ import "../CSS/HorizontalCard.css";
 const imagePath = "https://image.tmdb.org/t/p/w500/";
 
 function MovieCard({
-  moviename, movieavarage, movieposter
+ movieposter
 }) {
   return (
 <>
@@ -16,7 +16,7 @@ function MovieCard({
         </div>
       </div>
     </div>
-    
+   
     
     </>
   )

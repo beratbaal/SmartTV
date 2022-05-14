@@ -12,6 +12,7 @@ function Channels(){
       Apifetch('https://api.themoviedb.org/3/movie/top_rated?api_key=c94cd598b45d6dedb0cb1072fb43adb8&language=en-US&page=1',setTopMovieList)
   
     }, []);
+   
     function Apifetch(url,setList){
       fetch(url
       ).then(response => {

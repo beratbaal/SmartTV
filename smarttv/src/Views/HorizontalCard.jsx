@@ -20,7 +20,7 @@ export class HorizontalCard extends React.Component {
 
                         {this.props.movies.map((movie) => {
 
-                            return <MovieCard moviename={movie.title} movieposter={movie.poster_path}  />;
+                            return <MovieCard movieposter={movie.poster_path}  />;
 
                         })}
 
