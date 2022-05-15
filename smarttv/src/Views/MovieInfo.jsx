@@ -1,6 +1,7 @@
 import React from "react";
 import "../CSS/MovieInfo.css";
 import { Sidebar } from "./Sidebar";
+import { MovieList } from "./MovieList";
 import { Button } from "../Components/Button";
 import { Input } from "../Components/Input";
 
@@ -43,7 +44,9 @@ export class MovieInfo extends React.Component {
                     <p>Programme</p>
                 </div>
             </div>
-
+            <div className="movielist">
+              <MovieList/>
+            </div>
             </>
         );
     }

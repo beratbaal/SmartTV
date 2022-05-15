@@ -1,0 +1,102 @@
+.movielistheader{
+    position: absolute;
+    color: white;
+    width: 50%;
+    
+}
+.movielistdate{
+    float: right;
+    width: 50%;
+
+}
+.selectdate{
+    position: absolute;
+    left: 85%;
+    top: 10px;
+    font-size: 10px;
+}
+.tomorrow{
+    position: absolute;
+    left: 70%;
+    font-size: 10px;
+    top: 10px;
+    color: rgba(57,58,60,255);
+}
+.today{
+    position: absolute;
+    font-size: 10px;
+    top: 10px;
+    left: 55%;
+    color: rgba(57,58,60,255);
+}
+.movielistbody{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 100%;
+   
+}
+.bodyfirst{
+    position: absolute;
+   
+    width: 100%;
+    height: 20%;
+}
+.bodysecond{
+    position: absolute;
+
+    width: 100%;
+    height: 20%;
+    top: 20%;
+}
+.bodythird{
+    position: absolute;
+  
+    width: 100%;
+    height: 20%;
+    top: 40%;
+}
+.bodyfourth{
+    position: absolute;
+   
+    width: 100%;
+    height: 20%;
+    top: 60%;
+}
+.movielistimg{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    left: 5%;
+    top: 10%;
+    border-radius: 50px;
+}
+.movielistname{
+    position: absolute;
+    left: 20%;
+    color: white;
+}
+.movielistdesc{
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+.movielisticon{
+    position: absolute;
+   
+    left: 80%;
+    top: 10%;
+    height: 20%;
+    width: 10%;
+
+}
+.movielistbell{
+    position: absolute;
+    
+    top: 10%;
+}
+.movielistcam{
+    position: absolute;
+    left: 50%;
+    top:10%;
+}
