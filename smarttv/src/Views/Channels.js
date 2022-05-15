@@ -4,6 +4,7 @@ import "../CSS/Channels.css";
 import { Sidebar } from "./Sidebar";
 import { Slider } from "./Slider";
 import { HorizontalCard } from "./HorizontalCard";
+import { Input } from "../Components/Input";
 
 
 function Channels(){
@@ -31,7 +32,7 @@ function Channels(){
           <div className="channelsheader">
               <div className="header"><h3>TV Channels</h3></div>
              
-             <div><input type="text" className="channelsinput" placeholder="Search"/></div> 
+             <div><Input placeHolder="Search"/></div> 
               </div>
             <Slider/>
             <div className="horizontalcardheader">

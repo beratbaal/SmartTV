@@ -1,0 +1,24 @@
+.defaultinput{
+    float: right;
+    position: absolute;
+    margin-top: -2%;
+    margin-left: 60%;
+    height: 3%;
+    width: 15%;
+    border:none;
+    background-color: #818181;
+    border-radius: 30px;
+    
+}
+.movieinfoinput{
+    float: right;
+    position: absolute;
+    left: 80%;
+    top:2%;
+    height: 3%;
+    width: 15%;
+    border:none;
+    background-color: #818181;
+    border-radius: 30px;
+
+}

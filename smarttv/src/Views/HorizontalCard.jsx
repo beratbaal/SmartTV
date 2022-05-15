@@ -1,11 +1,26 @@
 import React from "react";
 import "../CSS/HorizontalCard.css";
 import MovieCard from "../Components/MovieCard";
+import $ from 'jquery'
 
-function scrolling(target, value) {
-    const customHorizontal = target.parentElement.parentElement.parentElement
-    customHorizontal.scrollLeft += value;
+
+
+function customscrolling(){
+    $('#ileri').click(function()
+    {
+    
+        $('#customH').animate( { scrollLeft: '+=250' });
+        return false
+    });
+   $('#geri').click(function()
+   {
+       $('#customH').animate({scrollLeft: '-=250'});
+       return false
+   }
+
+   )
 }
+
 
 export class HorizontalCard extends React.Component {
     constructor(props) {
@@ -24,10 +39,10 @@ export class HorizontalCard extends React.Component {
 
                         })}
 
-                        <button className="btngeri" id="geri" onClick={e => scrolling(e.target, -1000)
+                        <button className="btngeri" id="geri" onClick={customscrolling
                         }></button>
-                        <button className="btnileri" id="ileri" onClick={e => scrolling(e.target, 500)
-                        } ></button>
+                        <button className="btnileri" id="ileri" onClick={customscrolling}
+                         ></button>
                     </div>
                 </div>
 

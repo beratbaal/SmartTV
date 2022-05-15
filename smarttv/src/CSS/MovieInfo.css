@@ -1,0 +1,84 @@
+.movieinfoheader{
+    margin-left: 20%;
+    margin-top: -3%;
+    width: 80%;
+    height: auto;
+
+}
+.movieinfotitle{
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    height: auto;
+    width: 200px;
+}
+.movieinfoimg{
+   
+    height: 64px;
+    width: 64px;
+    
+    border-radius: 80px;
+}
+.movieinfochannel{
+    position: absolute;
+    left: 40%;
+    top: -3px;;
+}
+.movieinfoimgtitle{
+    color: white;
+    position: absolute;
+    left: 40%;
+    top: 10px;;
+}
+.movieinfobuttons{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    height: 50px;
+    width: 200px;
+  
+}
+.movieinfovideo{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    height:75%;
+    width: 35%;
+    
+}
+.movieinfovideoheader{
+    color: white;
+}
+.movieinfovideoposter{
+    height: 50%;
+    width: 100%;
+}
+.movieinfoname{
+    position: absolute;
+    color: white;
+
+    width: 50%;
+    
+}
+.movieinfoepidose{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    color: rgba(62,63,65,255);
+}
+.movieinfolive{
+    color: rgba(183,64,224,255);
+    
+}
+.movieinfodescription{
+    position: absolute;
+    color: rgba(62,63,65,255);
+  
+    top: 75%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.movieinfovideobottom{
+    position: absolute;
+    top: 90%;
+    color: white;
+}

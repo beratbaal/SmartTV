@@ -1,0 +1,30 @@
+.btnWatch{
+    background-color: rgba(185,57,228,255);
+    border-radius: 50px;
+    border: none;
+    width: 80%;
+    height: 70%;
+}
+.btnBack{
+    position: absolute;
+    top: 2%;
+    background-image: url("../Images/back.png");
+    background-repeat: no-repeat;
+    height: 4%;
+    width: 2%;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+}
+.btnFav{
+    position: absolute;
+    left: 85%;
+    top: 10%;
+    height: 60%;
+    width: 15%;
+    border-radius: 60px;
+    background-color: transparent;
+    background-image: url("../Images/fav.png");
+    background-repeat: no-repeat;
+    border-color: white;
+}

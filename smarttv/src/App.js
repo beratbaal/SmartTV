@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import {Sidebar} from './Views/Sidebar';
 import  Channels  from './Views/Channels';
+import { MovieInfo } from './Views/MovieInfo';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+
 
 
 
@@ -20,11 +21,13 @@ function App() {
 
   return(
     <BrowserRouter>
+   
       <Routes>
         <Route index path="/" element={<MainPage/>}/>
         <Route index path="/Channels" element={<Channels/>}/>
-     
+        <Route index path="/MovieInfo" element={<MovieInfo/>}/>
       </Routes>
+      
     </BrowserRouter>
   )
 
