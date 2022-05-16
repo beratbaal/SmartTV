@@ -23,8 +23,8 @@ export class MovieList extends React.Component {
                   <h4 className="movielistname">Breaking Bad</h4>
                   <p className="movielistdesc">Drama</p>
                   <div className="movielisticon">
-                      <img src={bell} className="movielistbell"/>
-                      <img src={cam} className="movielistcam"/>
+                     <a href="#"><img src={bell} className="movielistbell"/></a> 
+                     <a href="#"> <img src={cam} className="movielistcam"/></a>
                   </div>
                </div>
                <div className="bodysecond">
@@ -32,8 +32,8 @@ export class MovieList extends React.Component {
                   <h4 className="movielistname">Game of Thrones</h4>
                   <p className="movielistdesc">Medieval Fantasy</p>
                   <div className="movielisticon">
-                      <img src={bell} className="movielistbell"/>
-                      <img src={cam} className="movielistcam"/>
+                    <a href="#"><img src={bell} className="movielistbell"/></a>  
+                      <a href="#"><img src={cam} className="movielistcam"/></a>
                   </div>
                </div>
                <div className="bodythird">
@@ -41,8 +41,8 @@ export class MovieList extends React.Component {
                   <h4 className="movielistname">Prison Break</h4>
                   <p className="movielistdesc">Delective</p>
                   <div className="movielisticon">
-                      <img src={bell} className="movielistbell"/>
-                      <img src={cam} className="movielistcam"/>
+                     <a href="#"><img src={bell} className="movielistbell"/></a> 
+                      <a href="#"><img src={cam} className="movielistcam"/></a>
                   </div>
                </div>
                <div className="bodyfourth">
@@ -50,8 +50,8 @@ export class MovieList extends React.Component {
                   <h4 className="movielistname">Mr Robot</h4>
                   <p className="movielistdesc">Drama</p>
                   <div className="movielisticon">
-                      <img src={bell} className="movielistbell"/>
-                      <img src={cam} className="movielistcam"/>
+                      <a href="#"><img src={bell} className="movielistbell"/></a>
+                      <a href="#"><img src={cam} className="movielistcam"/></a>
                   </div>
                </div>
             </div>     

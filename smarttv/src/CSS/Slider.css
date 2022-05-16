@@ -81,10 +81,12 @@
     opacity: .4;
     z-index: 0;
   }
+
   @media (max-width:1400px) {
     .cardslider{
       left: 5%;
     }
+   
  }
  @media (max-width:1275px) {
     .imgslider{
@@ -109,8 +111,8 @@
   }
 }
 @media(max-width:400px){
-  .containerslider{
-      margin-top: 20%;
+  .cardslider{
+     
   }
 }
   

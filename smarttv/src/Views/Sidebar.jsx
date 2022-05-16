@@ -1,6 +1,7 @@
 import React from "react";
 import "../CSS/Sidebar.css";
 import { Link } from "react-router-dom";
+import menu from "../Images/menu.png"
 
 function openNav() {
     document.getElementById("Sidebar").style.width = "250px";
@@ -38,7 +39,7 @@ export class Sidebar extends React.Component {
                     </div>
                 </div>
                 <span onClick={openNav}>
-                   <img src="https://cdn-icons.flaticon.com/png/128/4254/premium/4254068.png?token=exp=1652456996~hmac=85c377d013d016d41cfbdcf15b69dfdd" className="hamburger-icon"/>
+                   <img src={menu} className="hamburger-icon"/>
                 </span>
 
             </>

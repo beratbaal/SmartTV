@@ -1,56 +1,55 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import '../CSS/Video.css';
 import VideoPlayer from 'react-video-js-player';
-import { useState } from "react";
-;
-
-export default function VideoJS({
-  poster = "https://i2.cnnturk.com/i/cnnturk/75/800x400/5e7cec44d265a213003b28cf",
 
 
+const skipTime = 15;
+
+function VideoJS({
+    src,
+    poster,
+    autoplay,
+    onPlay,
+    onPause,
+    onEnd
 }) {
 
-  const [hlsUrl, setHlsUrl] = useState(
-    "https://multiplatform-f.akamaihd.net/i/multi/will/bunny/big_buck_bunny_,640x360_400,640x360_700,640x360_1000,950x540_1500,.f4v.csmil/master.m3u8"
-  );
+    const handle=(player)=>{
 
- 
-  function VİdeoPlayer({url}){
-    return(
-      <div className='video-js'>
-        
-      <VideoPlayer
-        src={url}
-        poster={poster}
-        width="600"
-        height="400"
-        playbackRates={[0.25, 0.50, 1, 1.25, 1.50, 2]}
-        autoplay={true}
-        controls={true}
-        
-      />
-    
-    </div>
-    )
-  }
+        player.on('play', () => {
+            onPlay();
+        });
+        player.on('pause', () => {
+            onPause();
+        });
+        player.on('ended', () => {
+            onEnd();
+        });
+        document.addEventListener("keydown",(e)=>{
+            if(e.keyCode==37){
+                skip(player)
+            }else if(e.keyCode==39){
+                skip(player)
+            }
+          }
+        )
+    }
+    function skip(player){
+        player.currentTime( Math.floor(player.currentTime()+skipTime));
+    }
 
   return (
-    
-    <>
-    
-    <div>
-      
-      <input 
-      
-        className="hlsinput"
-        type="text"
-        placeholder="HLS Url..."
-        onChange={(e) => setHlsUrl(e.target.value)}
-      />
-      </div>
-    <VİdeoPlayer url={hlsUrl}/>
-  
-
-    </>
+    <div className='video-js'>
+        <VideoPlayer
+            src={src}
+            poster={poster}
+            playbackRates={[0.25, 0.50, 1, 1.25, 1.50]}
+            autoplay={autoplay}
+            controls
+            onReady={handle}
+        />
+    </div>
   )
 }
+
+export default VideoJS
