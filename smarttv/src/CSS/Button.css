@@ -28,3 +28,13 @@
     background-repeat: no-repeat;
     border-color: white;
 }
+@media (max-width:1130px){
+    .btnBack{
+        left: 5%;
+    }
+}
+@media (max-width:510px){
+    .btnBack{
+        display: none;
+    }
+}

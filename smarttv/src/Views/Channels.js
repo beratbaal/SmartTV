@@ -28,7 +28,7 @@ function Channels(){
   
         return(
             <>
-          <Sidebar/>
+       
           <div className="channelsheader">
               <div className="header"><h3>TV Channels</h3></div>
              

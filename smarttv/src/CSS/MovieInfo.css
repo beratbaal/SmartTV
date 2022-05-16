@@ -1,3 +1,4 @@
+
 .movieinfoheader{
     margin-left: 20%;
     margin-top: -3%;
@@ -87,4 +88,65 @@
     top: 30%;
     height: 450px;
     width: 600px;
+}
+
+@media (max-width:1400px){
+    .movielist{
+        width: 500px;
+    }
+}
+@media (max-width:1170px){
+    .movielist{
+        left: 57%;
+    }
+}
+@media (max-width:1130px){
+      
+        .movieinfovideo{
+            left: 5%;
+        }
+        .movieinfotitle{
+            left:5%
+        }
+        .movieinfobuttons{
+            left: 5%;
+        }
+        .movielist{
+            left: 45%;
+        }
+}
+@media(max-width:900px){
+   h3{
+       font-size: 10px;
+   }
+   .movieinfodescription{
+       top: 65%;
+   }
+   .movielist{
+       width: 55%;
+   }
+}
+@media(max-width:510px){
+    
+    .movieinfotitle{
+        left: 20%;
+    }
+    .movieinfobuttons{
+        left: 20%;
+    }
+    .movieinfovideo{
+        left: 20%;
+        width: 300px;
+    }
+    .movielist{
+        left: 10%;
+        top: 100%;
+        width: 80%;
+    }
+   
+}
+@media (max-width:400px){
+    .movieinfovideo{
+        left: 10%;
+    }
 }

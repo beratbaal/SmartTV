@@ -30,3 +30,10 @@ a:hover{
 ::placeholder{
     color: #3c3a3ac9;
 }
+@media (max-width:510px){
+    .header{
+        margin-left: 30%;
+       
+    }
+}
+

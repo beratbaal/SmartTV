@@ -22,3 +22,19 @@
     border-radius: 30px;
 
 }
+@media (max-width:1130px){
+    .movieinfoinput{
+        left: 70%;
+    }
+}
+@media (max-width:510px){
+    .movieinfoinput{
+        width: 50%;
+        left: 25%;
+    }
+    .defaultinput{
+        left: -35%;
+        width: 50%;
+        top: 15%;
+    }
+}

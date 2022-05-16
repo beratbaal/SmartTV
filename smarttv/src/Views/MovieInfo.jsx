@@ -14,7 +14,7 @@ export class MovieInfo extends React.Component {
             <>
             <Sidebar/>
             <div className="movieinfoheader">
-                <Button buttonStyle="btnBack" path="/Channels"></Button>
+                <Button buttonStyle="btnBack" path="/"></Button>
                 <Input inputStyle="movieinfoinput" placeHolder="Search"/>
             </div>
             <div className="movieinfotitle">
@@ -23,7 +23,7 @@ export class MovieInfo extends React.Component {
                 <h2 className="movieinfoimgtitle">CNN</h2>
             </div>
             <div className="movieinfobuttons">
-                <Button buttonStyle="btnWatch">Watch</Button>
+                <Button buttonStyle="btnWatch" path="/VideoJSView">Watch</Button>
                 <Button buttonStyle="btnFav"></Button>
             </div>
             <div className="movieinfovideo">

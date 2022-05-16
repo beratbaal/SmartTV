@@ -5,7 +5,9 @@
     border-style: none;
     overflow-x: hidden;
 }
-
+.row{
+    margin-top: 8%;
+}
 .btnileri{
     position: absolute;
     width: 50px;
@@ -16,7 +18,7 @@
     background-color: transparent;
     border: none;
     margin-left: 75%;
-    z-index: 999;
+    z-index: 1;
 }
 .btngeri{
     position: absolute;
@@ -28,7 +30,7 @@
     background-color: transparent;
     border: none;
     margin-left: 3%;
-    z-index: 999;
+    z-index: 1;
 }
 
 
@@ -70,25 +72,48 @@
     margin-top: 25%;
     margin-left: 20%;
     width: 80%;
-  
-}
-
-
-@media (max-width:1400px) {
-    .btngeri{
-       margin-top:15%;
     
-    }
-    .btnileri{
-        margin-top: 15%;
-    }
 }
+
+
 @media (max-width:750px) {
     .btngeri{
-       margin-top:40%;
+       margin-top:5%;
     
     }
     .btnileri{
-        margin-top: 40%;
+        margin-top: 5%;
+    }
+}
+@media(max-width:1125px){
+    .customHorizontalCard{
+        margin-left: 1%;
+        margin-top: 35%;
+        width: 100%;
+    }
+    .col-3{
+        width: 20%;
+    }
+    .btnileri{
+        left: 20%;
+    }
+}
+@media (max-width:510px){
+    .customHorizontalCard{
+       margin-top: 65%;
+    }
+    .btngeri{
+        top: 65%;
+    }
+    .btnileri{
+        top: 65%;
+    }
+    .col-3{
+        width: 20%;
+    }
+}
+@media(max-width:400px){
+    .customHorizontalCard{
+        margin-top: 100%;
     }
 }

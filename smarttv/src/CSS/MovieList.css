@@ -38,7 +38,6 @@
 }
 .bodyfirst{
     position: absolute;
-   
     width: 100%;
     height: 20%;
 }
@@ -83,7 +82,6 @@
 }
 .movielisticon{
     position: absolute;
-   
     left: 80%;
     top: 10%;
     height: 20%;
@@ -100,3 +98,32 @@
     left: 50%;
     top:10%;
 }
+
+@media (max-width:900px){
+   .movielistname{
+       left: 25%;
+   }
+   .movielistdesc{
+       left:25%;
+   }
+}
+@media (max-width:660px){
+    .movielisticon{
+       width: 15%;
+    }
+    h4{
+        font-size: 10px;
+     
+    }
+    .movielistheader{
+        left: 5%;
+    }
+    .movielistname{
+        left: 30%;
+    }
+    .movielistdesc{
+        left: 30%;
+    }
+ 
+}
+
