@@ -1,119 +1,129 @@
-.card-block {
-    height: 200px;
-    width: 300px;
-    margin: 0;
-    border-style: none;
+.containerhorizontalcard{
+    position: absolute;
+    top: 65%;
+    width: 80%;
+    left: 20%;
+
+}
+.rowhorizontalcard{
+    
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     overflow-x: hidden;
-}
-.row{
-    margin-top: 8%;
-}
-.btnileri{
+    overflow-y: hidden;
+   
+  }
+  .horizontalcard {
+    width: 80%;
+    float: left;
+    max-width: 33.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 33.333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    
+  }
+  
+  .horizontalcard > img {
+    margin-bottom: .75rem;
+    
+  }
+  .imghorizontal{
+  
+      height: 150px;
+
+  }
+  
+ 
+ 
+  .horizontalcarddesc{
+ 
+       
+      width: 60%;
+      height: 30%;
+  }
+  .carddescimglink{
+    height: 48px;
+    border-radius: 50px;
+    position: relative;
+    top: 5px;
+  }
+  .carddescimg{
+
+      height: 48px;
+      border-radius: 50px;
+  }
+  .carddescinfo{
+      position: relative;
+      left: 25%;
+      top: -55%;
+      width: 70%;
+
+  }
+  h5{
+      font-size: 15px;
+      color: white;
+  }
+  .btnileri{
     position: absolute;
     width: 50px;
     height: 50px;
-    margin-top: 5%;
+    top: 25%;
     background-image: url("//assets.dsmartgo.com.tr/content/img/trainFw.png");
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
-    margin-left: 75%;
-    z-index: 1;
+    margin-left: 97%;
+    z-index: 999;
 }
 .btngeri{
     position: absolute;
     width: 50px;
     height: 50px;
-    margin-top: 5%;
+    top: 25%;
     background-image: url("https://assets.dsmartgo.com.tr/content/img/trainBack.png");
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
     margin-left: 3%;
-    z-index: 1;
+    z-index: 999;
 }
 
-
-.movieimg{
-    width: 100%;
-    height: 100%;
-
-}
-.movieimg img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 100% 80%;
-    
-}
-.movieinfo{
-    width: 100%;
-    color: white;
-    bottom: 0;
-    margin-top: -100px;
-    font-weight: 500;
-}
-.col-3{
-   
-    transition: 1s;
-    z-index: 0;
-    width: 350px;
-    height: auto
-}
-
-
-.info{
-    visibility: hidden;
-    transition: 0.5s;
-  
-}
-.customHorizontalCard{  
-    overflow-x:hidden;
-    margin-top: 25%;
-    margin-left: 20%;
-    width: 80%;
-    
-}
-
-
-@media (max-width:750px) {
-    .btngeri{
-       margin-top:5%;
-    
-    }
-    .btnileri{
-        margin-top: 5%;
+@media (max-width:1350px){
+    .carddescinfo{
+        left:35%;
     }
 }
-@media(max-width:1125px){
-    .customHorizontalCard{
-        margin-left: 1%;
-        margin-top: 35%;
-        width: 100%;
+@media (max-width:1125px){
+    .carddescinfo{
+        left:55%;
     }
-    .col-3{
-        width: 20%;
+    .containerhorizontalcard{
+        left: 10%;
     }
-    .btnileri{
-        left: 20%;
+}
+@media (max-width:1060px){
+    .imghorizontal{
+      width: 70%;
+    }
+    .carddescinfo{
+        left: 45%;
+    }
+}
+@media (max-width:1020px){
+    .carddescinfo{
+        left:55%;
     }
 }
 @media (max-width:510px){
-    .customHorizontalCard{
-       margin-top: 65%;
+    .horizontalcarddesc{
+        display: none;
     }
-    .btngeri{
-        top: 65%;
-    }
-    .btnileri{
-        top: 65%;
-    }
-    .col-3{
-        width: 20%;
-    }
-}
-@media(max-width:400px){
-    .customHorizontalCard{
-        margin-top: 100%;
+    .imghorizontal{
+        width: 110%;
     }
 }

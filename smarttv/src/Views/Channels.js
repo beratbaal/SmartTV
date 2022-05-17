@@ -8,23 +8,7 @@ import { Input } from "../Components/Input";
 
 
 function Channels(){
-    const [topMovieList, setTopMovieList] = useState(["","","","","","","","","","","","","","","","","","","","",]);
-    useEffect(() => {
-      Apifetch('https://api.themoviedb.org/3/movie/top_rated?api_key=c94cd598b45d6dedb0cb1072fb43adb8&language=en-US&page=1',setTopMovieList)
-  
-    }, []);
    
-    function Apifetch(url,setList){
-      fetch(url
-      ).then(response => {
-        return response.json();
-      }).then(data => {
-  
-        const movies = data["results"];
-        setList(movies)
-        console.log(movies)
-      });
-    }
   
         return(
             <>
@@ -35,10 +19,10 @@ function Channels(){
              <div><Input placeHolder="Search"/></div> 
               </div>
             <Slider/>
-            <div className="horizontalcardheader">
-               <a href="#"><p>Live</p></a> 
+            <div >
+               <a href="#" className="horizontalcardheader"><p>Live</p></a> 
             </div>
-            <HorizontalCard movies={topMovieList}/>
+            <HorizontalCard />
             </>
         )
     

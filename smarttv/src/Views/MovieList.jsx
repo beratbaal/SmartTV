@@ -19,26 +19,26 @@ export class MovieList extends React.Component {
             </div>
             <div className="movielistbody">
                <div className="bodyfirst">
-                  <img src="https://imgrosetta.mynet.com.tr/file/12215801/728xauto.jpg" className="movielistimg"/>
-                  <h4 className="movielistname">Breaking Bad</h4>
-                  <p className="movielistdesc">Drama</p>
+                  <img src="https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_400x400.jpg" className="movielistimg"/>
+                  <h4 className="movielistname">Newsroom</h4>
+                  <p className="movielistdesc">Newseoom with Rosemary Church</p>
                   <div className="movielisticon">
                      <a href="#"><img src={bell} className="movielistbell"/></a> 
                      <a href="#"> <img src={cam} className="movielistcam"/></a>
                   </div>
                </div>
                <div className="bodysecond">
-               <img src="https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg" className="movielistimg"/>
-                  <h4 className="movielistname">Game of Thrones</h4>
-                  <p className="movielistdesc">Medieval Fantasy</p>
+               <img src="https://pbs.twimg.com/profile_images/1223219067764510720/uSNMBoWU_400x400.jpg" className="movielistimg"/>
+                  <h4 className="movielistname">Early Start</h4>
+                  <p className="movielistdesc">Buisiness Show</p>
                   <div className="movielisticon">
                     <a href="#"><img src={bell} className="movielistbell"/></a>  
                       <a href="#"><img src={cam} className="movielistcam"/></a>
                   </div>
                </div>
                <div className="bodythird">
-               <img src="https://tr.web.img3.acsta.net/pictures/17/05/22/16/49/588696.jpg" className="movielistimg"/>
-                  <h4 className="movielistname">Prison Break</h4>
+               <img src="https://www.omnycontent.com/d/playlist/d83f52e4-2455-47f4-982e-ab790120b954/6be5a01b-cca4-485b-a402-ab8600d3eec3/6218bd5c-9598-47b5-8d93-ab8600d3eec3/image.jpg?t=1623353449&size=Large" className="movielistimg"/>
+                  <h4 className="movielistname">Amanpour</h4>
                   <p className="movielistdesc">Delective</p>
                   <div className="movielisticon">
                      <a href="#"><img src={bell} className="movielistbell"/></a> 
@@ -46,9 +46,9 @@ export class MovieList extends React.Component {
                   </div>
                </div>
                <div className="bodyfourth">
-               <img src="https://i0.wp.com/www.tayfuncatechnology.com/wp-content/uploads/2020/09/mr.robot-Amazon-prime-video.jpg" className="movielistimg"/>
-                  <h4 className="movielistname">Mr Robot</h4>
-                  <p className="movielistdesc">Drama</p>
+               <img src="https://edition.cnn.com/audio/static/images/podcasts/the-lead-square-l.c1935250.jpg" className="movielistimg"/>
+                  <h4 className="movielistname">The Lead</h4>
+                  <p className="movielistdesc">Jake Trapper covers all the day</p>
                   <div className="movielisticon">
                       <a href="#"><img src={bell} className="movielistbell"/></a>
                       <a href="#"><img src={cam} className="movielistcam"/></a>
