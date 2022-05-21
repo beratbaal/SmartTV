@@ -1,9 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react'
-import "../CSS/OnlineCinema.css";
+import React, { useEffect, useState } from 'react'
+import "../CSS/CinemaMovie.css";
 import { Sidebar } from '../Views/Sidebar';
 import { Button } from './Button';
 import { Input } from './Input';
-import { OnlineCinema } from '../Views/OnlineCinema';
+import { OnlineCinema } from '../Mapping/OnlineCinema';
+
 
 function CinameMovies({
 
@@ -24,17 +25,20 @@ function CinameMovies({
           console.log(movies)
         });
       }
+      
       return(
-        <>
+    <>
         <Sidebar/>
            <div className="onlinecinemaheader">
             <Button buttonStyle="btnBack" path="/"></Button>
             <Input inputStyle="movieinfoinput" placeHolder="Search.."></Input>
            </div>
         <div className="onlinecinemamovielist">
-            <OnlineCinema movies={nowPlayingMovieList.slice(10)}/>
+          <OnlineCinema movies={nowPlayingMovieList.slice(10)}/>
         </div>
+
     </>
       )
+    
 }
 export default CinameMovies
