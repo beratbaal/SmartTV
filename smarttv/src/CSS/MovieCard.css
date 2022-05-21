@@ -1,0 +1,19 @@
+.moviecardcontainer{
+    width: 20%;
+    height: 200px;
+    float: left
+}
+.cinemamovieimg{
+    width: 50%;
+}
+.moviecardinfo{
+    position: absolute;
+    background-color: aqua;
+    width: 10%;
+    top: 15px;
+}
+.movietitle{
+    position: absolute;
+    color: white;
+    top: -10%;
+}

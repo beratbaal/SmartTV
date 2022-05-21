@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect, useState } from 'react';
 import "../CSS/Channels.css";
-import { Sidebar } from "./Sidebar";
 import { Slider } from "./Slider";
 import { HorizontalCard } from "./HorizontalCard";
 import { Input } from "../Components/Input";

@@ -1,0 +1,15 @@
+.onlinecinemaheader{
+    margin-left: 20%;
+    margin-top: -3%;
+    width: 80%;
+    height: auto;
+    
+}
+.onlinecinemamovielist{
+    position: absolute;
+    background-color: brown;
+    top: 10%;
+    left: 20%;
+    width: 80%;
+    height: 90%;
+}
