@@ -1,19 +1,17 @@
 .moviecardcontainer{
     width: 20%;
-    height: 200px;
+    height: 300px;
     float: left
 }
 .cinemamovieimg{
-    width: 50%;
+    width: 70%;
+    transition: transform .2s;
 }
-.moviecardinfo{
+.moviecardbody{
     position: absolute;
-    background-color: aqua;
-    width: 10%;
-    top: 15px;
+    width: 250px;
 }
-.movietitle{
-    position: absolute;
-    color: white;
-    top: -10%;
+
+.cinemamovieimg:hover{
+    transform: scale(1.5);
 }

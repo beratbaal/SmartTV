@@ -10,13 +10,13 @@ export class OnlineCinema extends React.Component {
     render(){
         return(
           <>
-            <div className="custommoviecard">
+           
                 {
                     this.props.movies.map((movie)=>{
-                        return <MovieCard title={movie.title} imageUrl={movie.poster_path} average={movie.vote_average}/>
+                        return <MovieCard  imageUrl={movie.poster_path}/>
                     })
                 }
-            </div>
+            
           </>
         )
     }

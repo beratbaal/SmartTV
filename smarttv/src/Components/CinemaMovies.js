@@ -8,8 +8,8 @@ import { OnlineCinema } from '../Views/OnlineCinema';
 function CinameMovies({
 
 }){
-    const imagePath = "https://image.tmdb.org/t/p/w500/";
-    const [nowPlayingMovieList, setNowPlayingMovieList] = useState(["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",]);
+
+    const [nowPlayingMovieList, setNowPlayingMovieList] = useState([]);
     useEffect(()=>{
         Apifetch('https://api.themoviedb.org/3/movie/now_playing?api_key=c94cd598b45d6dedb0cb1072fb43adb8&language=en-US&page=1', setNowPlayingMovieList)
     },[])
@@ -28,11 +28,11 @@ function CinameMovies({
         <>
         <Sidebar/>
            <div className="onlinecinemaheader">
-            <Button buttonStyle="btnBack" path="/Channels"></Button>
+            <Button buttonStyle="btnBack" path="/"></Button>
             <Input inputStyle="movieinfoinput" placeHolder="Search.."></Input>
            </div>
         <div className="onlinecinemamovielist">
-            <OnlineCinema movies={nowPlayingMovieList}/>
+            <OnlineCinema movies={nowPlayingMovieList.slice(10)}/>
         </div>
     </>
       )
