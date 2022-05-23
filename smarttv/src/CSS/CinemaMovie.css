@@ -12,3 +12,14 @@
     width: 80%;
     height: 90%;
 }
+@media (max-width:1050px) {
+    .onlinecinemamovielist{
+        left: 5%;
+    }
+}
+@media (max-width:510px){
+    .onlinecinemamovielist{
+        left: 10%;
+        width: 50%;
+    }
+}
